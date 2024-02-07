@@ -1,4 +1,6 @@
-/* This is the CSS code for your art website */
+*{
+    background-color: #31210a;
+}
 
 /* Add your own color theme and fonts here */
 :root {
@@ -126,4 +128,13 @@ footer {
     color: white; /* Use white as the text color */
     padding: 10px; /* Add some padding */
     text-align: center; /* Align the text to the center */
+}
+
+a{ 
+    font-size: 20px;
+    background-color: aquamarine;
+    color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text text-align: left: ;
 }
