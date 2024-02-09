@@ -4,7 +4,7 @@
 
 /* Add your own color theme and fonts here */
 :root {
-    --primary-color: #f0f0f0; /* A light gray color */
+    --primary-color: #d4b8b8; /* A light gray color */
     --secondary-color: #333333; /* A dark gray color */
     --accent-color: #0c2a7d; /* An orange color */
     --font-family: Arial, sans-serif; /* A common font family */
@@ -31,9 +31,12 @@ header {
 header h1 {
     font-size: 32px; /* Use a large font size */
     margin: 0; /* Remove the default margin */
-    border-style: double;
+    border-style: dashed;
     text-align: right;
     border-radius: 5px;
+    text-align: center;
+    padding: 10px 12px 6px 7px;
+color: #650202;
 }
 
 /* Style the nav element inside the header */
@@ -52,7 +55,7 @@ header nav ul {
 
 /* Style the li element inside the ul */
 header nav ul li {
-    margin: 2 10px; /* Add some margin between the items */
+    margin: 1cm; /* Add some margin between the items */
 }
 
 /* Style the a element inside the li */
@@ -82,7 +85,8 @@ main h2 {
 /* Style the p element inside the main */
 main p {
     font-size: 18px; /* Use a medium font size */
-    margin: 10px 0; /* Add some margin above and below */
+    margin: 10px 0; 
+    border-radius: 5px;/* Add some margin above and below */
 }
 
 /* Style the art-grid element inside the main */
