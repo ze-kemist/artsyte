@@ -1,12 +1,12 @@
 *{
-    background-color: #31210a;
+    background-color: #efe6db;
 }
 
 /* Add your own color theme and fonts here */
 :root {
     --primary-color: #f0f0f0; /* A light gray color */
     --secondary-color: #333333; /* A dark gray color */
-    --accent-color: #ff9900; /* An orange color */
+    --accent-color: #0c2a7d; /* An orange color */
     --font-family: Arial, sans-serif; /* A common font family */
 }
 
@@ -31,11 +31,15 @@ header {
 header h1 {
     font-size: 32px; /* Use a large font size */
     margin: 0; /* Remove the default margin */
+    border-style: double;
+    text-align: right;
+    border-radius: 5px;
 }
 
 /* Style the nav element inside the header */
 header nav {
-    display: flex; /* Use flexbox to align the items */
+    display: flex;
+    display: grid; /* Use flexbox to align the items */
 }
 
 /* Style the ul element inside the nav */
@@ -48,7 +52,7 @@ header nav ul {
 
 /* Style the li element inside the ul */
 header nav ul li {
-    margin: 0 10px; /* Add some margin between the items */
+    margin: 2 10px; /* Add some margin between the items */
 }
 
 /* Style the a element inside the li */
@@ -90,7 +94,7 @@ main .art-grid {
 
 /* Style the art-card element inside the art-grid */
 main .art-grid .art-card {
-    background-color: white; /* Use white as the background color */
+    background-color: rgb(158, 102, 18); /* Use white as the background color */
     border: 1px solid var(--secondary-color); /* Add a border with the secondary color */
     padding: 10px; /* Add some padding */
     text-align: center; /* Align the text to the center */
@@ -111,7 +115,7 @@ main .art-grid .art-card h3 {
 /* Style the button element inside the art-card */
 main .art-grid .art-card button {
     background-color: var(--accent-color); /* Use the accent color as the background color */
-    color: white; /* Use white as the text color */
+    color: rgb(255, 252, 252); /* Use white as the text color */
     border: none; /* Remove the default border */
     padding: 10px; /* Add some padding */
     cursor: pointer; /* Change the cursor to a pointer */
@@ -132,9 +136,25 @@ footer {
 
 a{ 
     font-size: 20px;
-    background-color: aquamarine;
+    
     color: black;
     padding-left: 10%;
     padding-right: 10%;
-    text text-align: left: ;
+    text text-align: left;
+border-radius 5px;
+
+}
+
+h3{
+    background-color: rgba(147, 227, 201, 0.596);
+    border: 10px;
+}
+p{
+    background-color: #cbb8da;
+}
+div{
+    border-radius: 5px;
+}
+button{
+    border-radius: 3px;
 }
