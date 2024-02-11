@@ -1,14 +1,54 @@
-<!DOCTYPE html>
-<html
-  <head>
- <title>Payment</title>
- </head>
- <body>
-  <p>consider making full payment for orderws below $50</p>
-
- <form action="/-checkout-" method="POST">
-  <button type="submit"> Now</button>
- </form>
- <a href="./index.html">home</a>
-  </body>
-</html>
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0", <title>Document</title> <style> *{ background-color: #efe6db; }
+  /* Add your own color theme and fonts here* :root { --primary-color: #d4b8b8; /* A light gray color*/ --secondary-color: #333333; /* A dark gray color*/ --accent-color: #0c2a7d; /* An orange color*/ --font-family: Arial, sans-serif; /* A common font family*/ }
+  
+  /* Style the body element*/ body{ background-color: var(--primary-color); /* Use the primary color as the background color*/ font-family: var(--font-family); /* Use the font family defined in the root*/ margin: 0; /* Remove the default margin*/ }
+  
+  /* Style the header element*/ header( background-color: var(--secondary-color); /* Use the secondary color as the background color*/ color: white; display: flex; align-items: center; justify-content: space-between; padding: 10px; }
+  
+  /* Style the h1 element inside the header*/ header h1( font-size: 32px; /* Use a large font size*/ margin: 0; border-style: dashed; text-align: right; border-radius: 5px; text-align: center; padding: 10px 12px 6px 7px; color: #650202; }
+  
+  /* Style the nav element inside the header*/ header nav{ display: flex; display: grid; }
+  
+  /* Style the ul element inside the nav*/ header nav ul{ display: flex; list-style: none; margin: 0; padding: 0; }
+  
+  /* Style the li element inside the ul*/ header nav ul li{ margin: 1cm; }
+  
+  /* Style the a element inside the li*/ header nav ul li a{ color: white; text-decoration: none; }
+  
+  /* Style the a element inside the li when hovered*/ header nav ul li a:hover{ color: var(--accent-color); /* Use the accent color as the text color*/ }
+  
+  /* Style the main element*/ main ( max-width: 1200px; margin: 0 auto; padding: 20px;}
+  
+  /* Style the h2 element inside the main*/ main h2( font-size: 24px; /* Use a large font size*/ margin: 0;}
+  
+  /* Style the p element inside the main*/ main p{ font-size: 18px; /* Use a medium font size*/ margin: 10px 0; border-radius: 5px; }
+  
+  /* Style the art-grid element inside the main*/ main .art-grid{ display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 20px; align-items: center; justify-items: center; }
+  
+  /* Style the art-card element inside the art-grid*/ main .art-grid .art-card{ background-color: rgb(158, 102, 18); /* Use white as the background color*/ border: 1px solid var(--secondary-color); /* Add a border with the secondary color*/ padding: 10px; text-align: center; }
+  
+  /* Style the img element inside the art-card*/ main .art-grid .art-card img{ width: 100%; /* Use the full width*/ height: auto; /* Use the proportional height*/ }
+  
+  /* Style the h3 element inside the art-card*/ main .art-grid .art-card h3{ font-size: 20px; /* Use a large font size*/ margin: 10px 0; }
+  
+  /* Style the button element inside the art-card*/ main .art-grid .art-card button{ background-color: var(--accent-color); /* Use the accent color as the background color*/ color: rgb(255, 252, 252); /* Use white as the text color*/ border: none; padding: 10px; cursor: pointer; border-radius: 3px; }
+  
+  /* Style the button element inside the art-card when hovered*/ main .art-grid .art-card button:hover{ background-color: var(--secondary-color); /* Use the secondary color as the background color*/ }
+  
+  /* Style the footer element*/ footer{ background-color: var(--secondary-color); /* Use the secondary color as the background color*/ color: white; padding: 10px; text-align: center; }
+  
+  a { font-size: 20px; color: black; padding-left: 10%; padding-right: 10%; text-align: left; border-radius: 5px; }
+  
+  h3{ background-color: rgba(147, 227, 201, 0.596); border: 10px; } p{ background-color: #cbb8da; border-style: double; border-radius: 5px; } div{ border-radius: 5px; } button{ border-radius: 3px; } .order-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  
+  .order-links a { background-color: var(--accent-color); color: rgb(255, 252, 252); border: none; padding: 10px; cursor: pointer; border-radius: 5px; margin: 10px; }
+  
+  .order-links a:hover { background-color: var(--secondary-color); }
+  
+  .payment-links( display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  
+  .payment-links a { background-color: var(--accent-color); color: rgb(255, 252, 252); border: none; padding: 10px; cursor: pointer; border-radius: 5px; margin: 10px; }
+  
+  .payment-links a:hover{ background-color: var(--secondary-color); }
+  
+  </style> </head> <body> <header> <h1>Gallery</h1> <nav> <ul> <li><a href="#">Home</a></li> <li><a href="#">About</a></li> <li><a href="#">Contact</a></li> </ul> </nav> </header> <main> <div class="art-grid"> <div class="art-card"> <img src="image1.jpg" alt="Art 1"> <h3>Art 1</h3> <button>View</button> </div> <div class="art-card"> <img src="image2.jpg" alt="Art 2"> <h3>Art 2</h3> <button>View</button> </div> <div class="art-card"> <img src="image3.jpg" alt="Art 3"> <h3>Art 3</h3> <button>View</button> </div> <div class="art-card"> <img src="image4.jpg" alt="Art 4"> <h3>Art 4</h3> <button>View</button> </div> <div class="art-card"> <img src="image5.jpg" alt="Art 5"> <h3>Art 5</h3> <button>View</button> </div> <div class="art-card"> <img src="image6.jpg" alt="Art 6"> <h3>Art 6</h3> <button>View</button> </div> <div class="art-card"> <img src="image7.jpg" alt="Art 7"> <h3>Art 7</h3> <button>View</button> </div> <div class="art-card"> <img src="image8.jpg" alt="Art 8"> <h3>Art 8</h3> <button>View</button> </div> </div> </main> <div class="order-links"> <a href="#order1">Order 1</a> <a href="#order2">Order 2</a> <a href="#order3">Order 3</a> </div> <footer> <div class="payment-links"> <a href="#paypal">Pay with PayPal</a> <a href="#credit-card">Pay with Credit Card</a> </div> </footer> </body> </html>
