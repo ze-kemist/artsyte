@@ -29,7 +29,9 @@ header {
 
 /* Style the h1 element inside the header */
 header h1 {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 32px; /* Use a large font size */
+    font-style:  italic; /* Make the text italic */
     margin: 15px; /* Remove the default margin */
     border-style: solid;
     text-align: right;
@@ -121,9 +123,10 @@ main .art-grid .art-card h3 {
 main .art-grid .art-card button {
     background-color: var(--accent-color); /* Use the accent color as the background color */
     color: rgb(255, 252, 252); /* Use white as the text color */
-    border: none; /* Remove the default border */
-    padding: 10px; /* Add some padding */
+    border:thick; /* Remove the default border */
+    padding: 8px; /* Add some padding */
     cursor: pointer; /* Change the cursor to a pointer */
+    padding-top: 300px;
 }
 
 /* Style the button element inside the art-card when hovered */
@@ -145,7 +148,6 @@ a{
     color: black;
     padding-left: 10%;
     padding-right: 10%;
-    text text-align: left;
     border:7px;
     outline:none;
     &:link{text-decoration:none;}
@@ -168,12 +170,15 @@ p{
 }
 div{
     border-radius: 5px;
+    padding-left: 10px;
+
 }
 button{
     border-radius: 3px;
     margin: 10px;
     width: 100px;
-    height: 30px;
+    height: 3
+    0px;
     display: flexbox;
     float: right;
     background-image: linear-gradient(to bottom, rgb(255, 163, 0), rgb(255, 124, 0));
@@ -212,13 +217,27 @@ a {
     max-width: 300px;
     min-height: 200px;
     margin: auto;
-    @media (min-width: 600px)    /* Enables the card to be displayed in a row on larger screens */
-        flex: 1 0 30%;             /* Tries to take up*/
-    @media (max-aspect-ratio: 1/3)/* But  */
-    flex-basis: 100%;          /* ...it won't if there*/
-    /* isn't enough room for it */
-
+   
     }
     img{
         height: 20%;
     width: 20%;    }
+    .div img{
+        filter: saturate(0%);
+        width: 10%;
+        border: 2px solid whitesmoke;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: all ease 0.4s;
+        cursor: pointer;
+    }
+    &:hover div.div img{
+       
+        filter: saturate(50%);
+        width:20%;
+    }
+    .gallery{
+        height: auto;
+        width: auto;
+    }
