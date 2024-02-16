@@ -241,3 +241,39 @@ a {
         height: auto;
         width: auto;
     }
+
+    
+    .container{
+        background-image: none;
+        box-shadow: none;
+        border: 2px solid whitesmoke;
+        text-align: left;
+        font-size: 18px;
+        color: black;
+        margin-top: 32px;
+        max-width: 75vw;
+        @media (min-width: 960px) 
+        {
+            max-width: 45vw;
+        }
+        input[type="text"], select, button{
+            outline: none;
+            border: none;
+            background: transparent;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        label{
+            display: block; 
+margin-bottom: 10px;
+        }
+        div.form-group{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .error-message{
+            color: red;
+            font-weight: bold;
+            visibility: hidden;
+        }
+    }

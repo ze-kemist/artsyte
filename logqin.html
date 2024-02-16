@@ -1,0 +1,69 @@
+<!DOCTYPE html
+<html langen">
+<head>
+<H1>SIGN INTO THE SYSTEM</H1>
+</head>
+<body>
+    <div class =     "container" style="width:30%">  
+        <?php echo form_open('login/verify'); ?> 
+            <label for="username">Username : </label><br/>
+            <input type="text" id="username" name="username"><br /><br />
+            <label for="password">Password : </label><br/>
+            <input type="password" id="password" name="password"><br /><br />
+            <input type="submit" value="Login"/><br /><br />
+        </form> 
+        
+        <a href="<?= base_url()?>index.php/register">Don't have an account? Register here.</a>
+    </div>
+</body>
+</html>
+
+<?php if (isset($message)) { ?>
+    <script>alert("Invalid username or password");</script>
+<?php } ?>  
+
+<!-- This is the script that will handle any errors and display them to the user -->
+<script>
+    // Get the error message from the session, if it exists
+    var errorMessage = '<?php echo $this->session->flashdata('error'); ?>';
+
+    // If there is an error message, display it to the user
+    if (errorMessage != '') {
+        alert(errorMessage);
+    }
+</script>  
+
+<!-- The following JavaScript code prevents users from entering spaces in their usernames and passwords -->
+<script>
+    function checkInput() {
+        // Get the values of the input fields
+        var usernameField = document.getElementById("username").value;
+        var passwordField = document.getElementById("password").value;
+
+        // Check each field for invalid characters
+        if (usernameField.indexOf(" ") !== -1) {
+            alert("Usernames cannot contain spaces.");
+            return false;
+        } else if (passwordField.indexOf(" ") !== -1) {
+            alert("Passwords cannot contain spaces.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>     
+
+<!-- Adds "required" attribute to form elements so they must be filled out before submission -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#submitButton").attr("disabled", "disabled");
+
+        $("input[type=text], input[type=password]").keyup(function () {
+            $("#submitButton").removeAttr("disabled");
+        });
+    });
+</script>  
+
+</body>
+</html>     </s:form></div>  </td><td valign="top"><!-- This empty table cell provides space between the login
